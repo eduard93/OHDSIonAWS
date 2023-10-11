@@ -502,6 +502,7 @@ Resources:
             Ebs: 
               VolumeType: "gp2"
               DeleteOnTermination: "true"
+              Encrypted: "true"
               VolumeSize: 50
           - DeviceName: "/dev/sdm"
             Ebs: 
