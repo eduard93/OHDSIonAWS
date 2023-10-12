@@ -892,7 +892,7 @@ Resources:
 
                     cd /tmp
                     #Deploy the OMOP CDM Schema to Redshift
-                    export REDSHIFTDDL=`ls ./CommonDataModel/Redshift/OMOP*`
+                    export REDSHIFTDDL=`ls ./CommonDataModel/inst/ddl/5.4/redshift/OMOP*`
                     #Some of the current Vocabulary data sets from Athena do not have values for these columns
                     if [ "$CDM_VERSION" = "5.3.1" ]; then
                         sed -i '47s/.*/  concept_name  VARCHAR(255) NULL ,/' "$REDSHIFTDDL"
